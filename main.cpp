@@ -6,7 +6,7 @@ bool isLowerCase(char ch) {
 }
 
 void proccess(const std::string& input) {
-    std::string result = "";
+    std::string result;
     int i = 0;
     while (i < input.length()-1) // Until the penultimate element
     {
