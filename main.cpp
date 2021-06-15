@@ -5,10 +5,8 @@ bool isLowerCase(char ch) {
     return (ch < 'z' && ch >= 'a');
 }
 
-void proccess(const std::string& input)
-{
+void proccess(const std::string& input) {
     std::string result = "";
-    int start = 0, end = 0;
     int i = 0;
     while (i < input.length()-1) // Until the penultimate element
     {
@@ -24,4 +22,11 @@ void proccess(const std::string& input)
         i++;
     }
     std::cout << "No such string!" << std::endl;
+}
+int main() {
+    std::cout << "Enter desired word: ";
+    std::string input;
+    std::cin >> input;
+    proccess(input);
+    return 0;
 }
