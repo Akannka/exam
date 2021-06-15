@@ -12,7 +12,7 @@ void proccess(const std::string& input) {
     {
         if (isLowerCase(input[i]) && isLowerCase(input[i + 1])) // If both elements are in the range [a..z]
         {
-            if (input[i] < input[i + 1])
+            if (input[i] < input[i + 1]) //if 1 is less than 2
             {
                 result = input.substr(i, 2);
                 std::cout << result.length() << " " << result << std::endl;
